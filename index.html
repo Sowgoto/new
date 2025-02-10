@@ -153,16 +153,19 @@
 		<li>Mechanical Engineering</li>
             </ul>
 
-		<div class="degree-selection">
-    <label>
-        <input type="radio" name="degree" value="undergraduate" checked> Undergraduate
-    </label>
-    <span style="margin: 0 10px;">&nbsp;</span>  <label>
-        <input type="radio" name="degree" value="graduate"> Graduate
-    </label>
+		<div style="display: flex; align-items: center;">  <label> <b>Degree:</b> </label>
+    <div style="display: flex; flex-direction: column; margin-left: 10px;">
+        <label>
+            <input type="radio" name="degree" value="undergraduate" checked> Undergraduate
+        </label>
+        <label>
+            <input type="radio" name="degree" value="graduate"> Graduate
+        </label>
+    </div>
 </div>
 
-<div style="margin-top: 20px;">  <label for="Course"> <b>Course for Cybersecurity:</b></label>
+<div style="margin-top: 20px;">
+    <label for="Course"> <b>Course for Cybersecurity:</b></label>
     <select id="Course">
         <option value="Secure e-commerce">Secure e-commerce</option>
         <option value="Introduction to computer security">Introduction to computer security</option>
